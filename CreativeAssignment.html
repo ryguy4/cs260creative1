@@ -42,6 +42,7 @@
   </body>
   <script>
     var score = 0;
+    var count = 0;
     function jeopardyQuestionC1() {
       var txt;
       var answer = prompt("Question: What building is the school of business located in?", "");
@@ -55,8 +56,13 @@
         score -= 100;
       }
       alert(txt);
+      count++;
       document.getElementById("C1").innerHTML = "";
       document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+
+      if (count == 16) {
+        alert("Game Over!  Your final score was: $" + score);
+      }
     }
 
     function jeopardyQuestionC2() {
@@ -72,8 +78,13 @@
           score -= 100;
         }
         alert(txt);
+        count++;
         document.getElementById("C2").innerHTML = "";
         document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+        
+        if (count == 16) {
+          alert("Game Over!  Your final score was: $" + score);
+        }
       }
 
     function jeopardyQuestionC3() {
@@ -89,8 +100,13 @@
         score -= 100;
       }
       alert(txt);
+      count++;
       document.getElementById("C3").innerHTML = "";
       document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+      
+      if (count == 16) {
+        alert("Game Over!  Your final score was: $" + score);
+      }
     }
 
     function jeopardyQuestionC4() {
@@ -106,15 +122,20 @@
         score -= 100;
       }
       alert(txt);
+      count++;
       document.getElementById("C4").innerHTML = "";
       document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+      
+      if (count == 16) {
+        alert("Game Over!  Your final score was: $" + score);
+      }
     }
 
     function jeopardyQuestionC5() {
       var txt;
       var answer = prompt("Question: What building replaced the Widtsoe Building?", "");
 
-      if (answer == "The Life Science Building" || answer == "the life science building" || answer == "The LSB") {
+      if (answer == "The Life Science Building" || answer == "the life science building" || answer == "The LSB" || answer == "LSB") {
         txt = "Congrats!";
         score += 200;
       } 
@@ -123,8 +144,13 @@
         score -= 200;
       }
       alert(txt);
+      count++;
       document.getElementById("C5").innerHTML = "";
       document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+      
+      if (count == 16) {
+        alert("Game Over!  Your final score was: $" + score);
+      }
     }
 
     function jeopardyQuestionC6() {
@@ -140,8 +166,13 @@
         score -= 200;
       }
       alert(txt);
+      count++;
       document.getElementById("C6").innerHTML = "";
       document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+      
+      if (count == 16) {
+        alert("Game Over!  Your final score was: $" + score);
+      }
     }
 
     function jeopardyQuestionC7() {
@@ -157,8 +188,13 @@
         score -= 200;
       }
       alert(txt);
+      count++;
       document.getElementById("C7").innerHTML = "";
       document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+      
+      if (count == 16) {
+        alert("Game Over!  Your final score was: $" + score);
+      }
     }
 
     function jeopardyQuestionC8() {
@@ -174,15 +210,20 @@
         score -= 200;
       }
       alert(txt);
+      count++;
       document.getElementById("C8").innerHTML = "";
       document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+      
+      if (count == 16) {
+        alert("Game Over!  Your final score was: $" + score);
+      }
     }
 
     function jeopardyQuestionC9() {
       var txt;
       var answer = prompt("Question: Which building contains a particle accelerator?", "");
 
-      if (answer == "The Eyering Science Center" || answer == "Eyering Science Center" || answer == "The ESC") {
+      if (answer == "The Eyering Science Center" || answer == "Eyering Science Center" || answer == "The ESC" || answer == "ESC") {
         txt = "Congrats!";
         score += 300;
       } 
@@ -191,8 +232,13 @@
         score -= 300;
       }
       alert(txt);
+      count++;
       document.getElementById("C9").innerHTML = "";
       document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+      
+      if (count == 16) {
+        alert("Game Over!  Your final score was: $" + score);
+      }
     }
 
     function jeopardyQuestionC10() {
@@ -208,8 +254,13 @@
         score -= 300;
       }
       alert(txt);
+      count++;
       document.getElementById("C10").innerHTML = "";
       document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+      
+      if (count == 16) {
+        alert("Game Over!  Your final score was: $" + score);
+      }
     }
 
     function jeopardyQuestionC11() {
@@ -225,8 +276,13 @@
         score -= 300;
       }
       alert(txt);
+      count++;
       document.getElementById("C11").innerHTML = "";
       document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+      
+      if (count == 16) {
+        alert("Game Over!  Your final score was: $" + score);
+      }
     }
 
     function jeopardyQuestionC12() {
@@ -242,8 +298,13 @@
         score -= 300;
       }
       alert(txt);
+      count++;
       document.getElementById("C12").innerHTML = "";
       document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+      
+      if (count == 16) {
+        alert("Game Over!  Your final score was: $" + score);
+      }
     }
 
     function jeopardyQuestionC13() {
@@ -259,15 +320,20 @@
         score -= 400;
       }
       alert(txt);
+      count++;
       document.getElementById("C13").innerHTML = "";
       document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+      
+      if (count == 16) {
+        alert("Game Over!  Your final score was: $" + score);
+      }
     }
 
     function jeopardyQuestionC14() {
       var txt;
       var answer = prompt("Question: From where did the Cosmobile originate?", "");
 
-      if (answer == "The Brick Oven" || answer == "Brick Oven" || answer == "Glee Zumbrennen") {
+      if (answer == "The Brick Oven" || answer == "Brick Oven" || answer == "brick oven" || answer == "Glee Zumbrennen") {
         txt = "Correct! The Cosmobile was donated by the owner of Brick Oven, Glee Zumbrennen, in 2001.";
         score += 400;
       } 
@@ -276,8 +342,13 @@
         score -= 400;
       }
       alert(txt);
+      count++;
       document.getElementById("C14").innerHTML = "";
       document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+      
+      if (count == 16) {
+        alert("Game Over!  Your final score was: $" + score);
+      }
     }
 
     function jeopardyQuestionC15() {
@@ -293,8 +364,13 @@
         score -= 400;
       }
       alert(txt);
+      count++;
       document.getElementById("C15").innerHTML = "";
       document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+      
+      if (count == 16) {
+        alert("Game Over!  Your final score was: $" + score);
+      }
     }
 
     function jeopardyQuestionC16() {
@@ -310,8 +386,13 @@
         score -= 400;
       }
       alert(txt);
+      count++;
       document.getElementById("C16").innerHTML = "";
       document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+      
+      if (count == 16) {
+        alert("Game Over!  Your final score was: $" + score);
+      }
     }
   </script>
 </html>
