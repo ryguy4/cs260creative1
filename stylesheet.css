@@ -10,12 +10,14 @@ table, th, td {
     text-align: center;
     background-color: #060CE9;
     color: #FFD700;
-	}
-th{
+}
+    
+th {
 	font-size: 150%
 }
-td{
+
+td {
 	font-size: 250%
 }
 
-td :hovor{background-color:#0409CE}
+td:hovor{background-color:#0409CE}
