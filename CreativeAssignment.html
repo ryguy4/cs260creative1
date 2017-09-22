@@ -1,66 +1,67 @@
 <html>
-    <head>
-            <link rel="stylesheet" href="stylesheet.css">
-            <script src="script.js"></script>
-    </head>
-    <body>
-        <table>
-                <tr>
-                  <th colspan = 4>BYU Jeopardy</th>
-                </tr>
-                <tr>
-                  <th>Campus Buildings</th> <!column 1>
-                  <th>The Cosmo</th>        <!column 2>
-                  <th>BYU Sports</th>       <!column 3>
-                  <th>The University</th>   <!column 4>
-                </tr>
-                <tr>
-                  <td id = "C1" onclick="jeopardyQuestionC1(); this.onclick=null;">$100</td> <!row 1, cell 1>
-                  <td id = "C2" onclick="jeopardyQuestionC2(); this.onclick=null;">$100</td> <!row 1, cell 2>
-                  <td id = "C3" onclick="jeopardyQuestionC3(); this.onclick=null;">$100</td> <!row 1, cell 3>
-                  <td id = "C4" onclick="jeopardyQuestionC4(); this.onclick=null;">$100</td> <!row 1, cell 4>
-                </tr>
-                <tr>
-                  <td id = "C5" onclick="jeopardyQuestionC5(); this.onclick=null;">$200</td> <!row 2, cell 1>
-                  <td id = "C6" onclick="jeopardyQuestionC6(); this.onclick=null;">$200</td> <!row 2, cell 2>
-                  <td id = "C7" onclick="jeopardyQuestionC7(); this.onclick=null;">$200</td> <!row 2, cell 3>
-                  <td id = "C8" onclick="jeopardyQuestionC8(); this.onclick=null;">$200</td> <!row 2, cell 4>
-                </tr>
-                <tr>
-                  <td id = "C9" onclick="jeopardyQuestionC9(); this.onclick=null;">$300</td> <!row 3, cell 1>
-                  <td id = "C10" onclick="jeopardyQuestionC10(); this.onclick=null;">$300</td> <!row 3, cell 2>
-                  <td id = "C11" onclick="jeopardyQuestionC11(); this.onclick=null;">$300</td> <!row 3, cell 3>
-                  <td id = "C12" onclick="jeopardyQuestionC12(); this.onclick=null;">$300</td> <!row 3, cell 4>
-               </tr>
-               <tr>
-                  <td id = "C13" onclick="jeopardyQuestionC13(); this.onclick=null;">$400</td> <!row 4, cell 1>
-                  <td id = "C14" onclick="jeopardyQuestionC14(); this.onclick=null;">$400</td> <!row 4, cell 2>
-                  <td id = "C15" onclick="jeopardyQuestionC15(); this.onclick=null;">$400</td> <!row 4, cell 3>
-                  <td id = "C16" onclick="jeopardyQuestionC16(); this.onclick=null;">$400</td> <!row 4, cell 4>
-               </tr>
-              </table>
-    </body>
-    <script>
-      var score = 0;
-      function jeopardyQuestionC1() {
-        var txt;
-        var answer = prompt("Question: What building is the school of business located in?", "");
+  <head>
+          <link rel="stylesheet" href="stylesheet.css">
+          <script src="script.js"></script>
+  </head>
+  <body>
+      <table>
+              <tr>
+                <th id = "T1" colspan = 4>BYU Jeopardy</br>Score: </th>
+              </tr>
+              <tr>
+                <th>Campus Buildings</th> <!column 1>
+                <th>The Cosmo</th>        <!column 2>
+                <th>BYU Sports</th>       <!column 3>
+                <th>The University</th>   <!column 4>
+              </tr>
+              <tr>
+                <td id = "C1" onclick="jeopardyQuestionC1(); this.onclick=null;">$100</td> <!row 1, cell 1>
+                <td id = "C2" onclick="jeopardyQuestionC2(); this.onclick=null;">$100</td> <!row 1, cell 2>
+                <td id = "C3" onclick="jeopardyQuestionC3(); this.onclick=null;">$100</td> <!row 1, cell 3>
+                <td id = "C4" onclick="jeopardyQuestionC4(); this.onclick=null;">$100</td> <!row 1, cell 4>
+              </tr>
+              <tr>
+                <td id = "C5" onclick="jeopardyQuestionC5(); this.onclick=null;">$200</td> <!row 2, cell 1>
+                <td id = "C6" onclick="jeopardyQuestionC6(); this.onclick=null;">$200</td> <!row 2, cell 2>
+                <td id = "C7" onclick="jeopardyQuestionC7(); this.onclick=null;">$200</td> <!row 2, cell 3>
+                <td id = "C8" onclick="jeopardyQuestionC8(); this.onclick=null;">$200</td> <!row 2, cell 4>
+              </tr>
+              <tr>
+                <td id = "C9" onclick="jeopardyQuestionC9(); this.onclick=null;">$300</td> <!row 3, cell 1>
+                <td id = "C10" onclick="jeopardyQuestionC10(); this.onclick=null;">$300</td> <!row 3, cell 2>
+                <td id = "C11" onclick="jeopardyQuestionC11(); this.onclick=null;">$300</td> <!row 3, cell 3>
+                <td id = "C12" onclick="jeopardyQuestionC12(); this.onclick=null;">$300</td> <!row 3, cell 4>
+             </tr>
+             <tr>
+                <td id = "C13" onclick="jeopardyQuestionC13(); this.onclick=null;">$400</td> <!row 4, cell 1>
+                <td id = "C14" onclick="jeopardyQuestionC14(); this.onclick=null;">$400</td> <!row 4, cell 2>
+                <td id = "C15" onclick="jeopardyQuestionC15(); this.onclick=null;">$400</td> <!row 4, cell 3>
+                <td id = "C16" onclick="jeopardyQuestionC16(); this.onclick=null;">$400</td> <!row 4, cell 4>
+             </tr>
+            </table>
+  </body>
+  <script>
+    var score = 0;
+    function jeopardyQuestionC1() {
+      var txt;
+      var answer = prompt("Question: What building is the school of business located in?", "");
 
-        if (answer == "The Tanner Building" || answer == "tanner building" || answer == "Tanner Building") {
-          txt = "Congrats!";
-          score += 100;
-        } 
-        else {
-          txt = "Wrong! It's the Tanner Building.";
-          score -= 100;
-        }
-        alert(txt);
-        document.getElementById("C1").innerHTML = "";
+      if (answer == "Tanner Building" || answer == "tanner building") {
+        txt = "Congrats!";
+        score += 100;
+      } 
+      else {
+        txt = "Wrong!";
+        score -= 100;
       }
+      alert(txt);
+      document.getElementById("C1").innerHTML = "";
+      document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+    }
 
-      function jeopardyQuestionC2() {
-        var txt;
-        var answer = prompt("Question: What animal is Cosmo?", "");
+    function jeopardyQuestionC2() {
+      var txt;
+      var answer = prompt("Question: What animal is Cosmo?", "");
 
         if (answer == "A Cougar" || answer == "a cougar" || answer == "cougar") {
           txt = "Congrats!";
@@ -71,71 +72,59 @@
           score -= 100;
         }
         alert(txt);
-        document.getElementById("C2").innerHTML = "";   
+        document.getElementById("C2").innerHTML = "";
+        document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
       }
 
-      function jeopardyQuestionC3() {
-        var txt;
-        var answer = prompt("Question: When was the last time we beat Utah in the Holy War?", "");
+    function jeopardyQuestionC3() {
+      var txt;
+      var answer = prompt("Question: When was the last time we beat Utah in the Holy War?", "");
 
-        if (answer == "2009") {
-          txt = "Congrats!";
-          score += 100;
-        } 
-        else {
-          txt = "Wrong! It was 2009 you casuals.";
-          score -= 100;
-        }
-        alert(txt);
-        document.getElementById("C3").innerHTML = "";
+      if (answer == "2009") {
+        txt = "Congrats!";
+        score += 100;
+      } 
+      else {
+        txt = "Wrong! It was 2009 you casuals.";
+        score -= 100;
       }
+      alert(txt);
+      document.getElementById("C3").innerHTML = "";
+      document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+    }
 
-      function jeopardyQuestionC4() {
-        var txt;
-        var answer = prompt("Question: What is the minimum GPA requirement for full tuition in the college of Physical and Mathematical Sciences?", "");
+    function jeopardyQuestionC4() {
+      var txt;
+      var answer = prompt("Question: What is the minimum GPA requirement for full tuition in the college of Physical and Mathematical Sciences?", "");
 
-        if (answer == "3.95" || answer == "3.95 GPA") {
-          txt = "Congrats!";
-          score += 100;
-        } 
-        else {
-          txt = "Wrong!";
-          score -= 100;
-        }
-        alert(txt);
-        document.getElementById("C4").innerHTML = "";
+      if (answer == "3.95" || answer == "3.95 GPA") {
+        txt = "Congrats!";
+        score += 100;
+      } 
+      else {
+        txt = "Wrong!";
+        score -= 100;
       }
+      alert(txt);
+      document.getElementById("C4").innerHTML = "";
+      document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+    }
 
-      function jeopardyQuestionC5() {
-        var txt;
-        var answer = prompt("Question: What building replaced the Widtsoe Building?", "");
+    function jeopardyQuestionC5() {
+      var txt;
+      var answer = prompt("Question: What building replaced the Widtsoe Building?", "");
 
-        if (answer == "The Life Science Building" || answer == "the life science building" || answer == "The LSB" || answer == "the lsb") {
-          txt = "Congrats!";
-          score += 200;
-        } 
-        else {
-          txt = "Wrong!";
-          score -= 200;
-        }
-        alert(txt);
-        document.getElementById("C5").innerHTML = "";
+      if (answer == "The Life Science Building" || answer == "the life science building" || answer == "The LSB" || answer == "the lsb") {
+        txt = "Congrats!";
+        score += 200;
+      } 
+      else {
+        txt = "Wrong!";
+        score -= 200;
       }
-
-      function jeopardyQuestionC6() {
-        var txt;
-        var answer = prompt("Question: How long has Cosmo been BYU's mascot?", "");
-
-        if (answer == "64 Years" || answer == "Since 1953" || answer == "64 years") {
-          txt = "Congrats!";
-          score += 200;
-        } 
-        else {
-          txt = "Wrong! He became the mascot in 1953, making this his 64th year.";
-          score -= 200;
-        }
-        alert(txt);
-        document.getElementById("C6").innerHTML = "";
-      }
-    </script>
+      alert(txt);
+      document.getElementById("C5").innerHTML = "";
+      document.getElementById("T1").innerHTML = "BYU Jeopardy</br>Score: $" + score;
+    }
+  </script>
 </html>
