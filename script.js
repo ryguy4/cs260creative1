@@ -1,3 +1,4 @@
+document.title = "BYU Jeopardy";
 var score = 0;
 var count = 0;
 function jeopardyQuestionC1() {
