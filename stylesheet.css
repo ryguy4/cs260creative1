@@ -10,5 +10,9 @@ table, th, td {
     background-color: #060CE9;
     color: #FFD700;
 }
+<<<<<<< HEAD
 
 td:hovor{background-color: #0409ce}
+=======
+td:hover{background-color:#0409CE}
+>>>>>>> 9c5e6cac4e4bd8dbc49ef0f90e365514fd3def83
