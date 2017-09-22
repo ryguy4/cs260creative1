@@ -46,12 +46,12 @@
         var txt;
         var answer = prompt("Question: What building is the school of business located in?", "");
 
-        if (answer == "Tanner Building" || answer == "tanner building") {
+        if (answer == "The Tanner Building" || answer == "tanner building" || answer == "Tanner Building") {
           txt = "Congrats!";
           score += 100;
         } 
         else {
-          txt = "Wrong!";
+          txt = "Wrong! It's the Tanner Building.";
           score -= 100;
         }
         alert(txt);
@@ -64,7 +64,7 @@
 
         if (answer == "A Cougar" || answer == "a cougar" || answer == "cougar") {
           txt = "Congrats!";
-          socre += 100;
+          score += 100;
         } 
         else {
           txt = "Wrong!";
@@ -120,6 +120,22 @@
         }
         alert(txt);
         document.getElementById("C5").innerHTML = "";
+      }
+
+      function jeopardyQuestionC6() {
+        var txt;
+        var answer = prompt("Question: How long has Cosmo been BYU's mascot?", "");
+
+        if (answer == "64 Years" || answer == "Since 1953" || answer == "64 years") {
+          txt = "Congrats!";
+          score += 200;
+        } 
+        else {
+          txt = "Wrong! He became the mascot in 1953, making this his 64th year.";
+          score -= 200;
+        }
+        alert(txt);
+        document.getElementById("C6").innerHTML = "";
       }
     </script>
 </html>
