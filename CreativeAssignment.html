@@ -6,13 +6,13 @@
     <body>
         <table>
                 <tr>
-                  <th colspan = 4>Jeopardy Game</th>
+                  <th colspan = 4>BYU Jeopardy</th>
                 </tr>
                 <tr>
                   <th>Campus Buildings</th> <!column 1>
                   <th>The Cosmo</th>        <!column 2>
                   <th>BYU Sports</th>       <!column 3>
-                  <th>The University</th>  <!column 4>
+                  <th>The University</th>   <!column 4>
                 </tr>
                 <tr>
                   <td id = "C1" onclick="jeopardyQuestionC1(); this.onclick=null;">$100</td> <!row 1, cell 1>
@@ -41,64 +41,85 @@
               </table>
     </body>
     <script>
+      var score = 0;
       function jeopardyQuestionC1() {
         var txt;
         var answer = prompt("Question: What building is the school of business located in?", "");
 
         if (answer == "Tanner Building" || answer == "tanner building") {
           txt = "Congrats!";
+          score += 100;
         } 
         else {
           txt = "Wrong!";
+          score -= 100;
         }
+        alert(txt);
+        document.getElementById("C1").innerHTML = "";
       }
 
-        function jeopardyQuestionC2() {
-          var txt;
-          var answer = prompt("Question: What animal is Cosmo?", "");
-  
-          if (answer == "A Cougar" || answer == "a cougar" || answer == "cougar") {
-            txt = "Congrats!";
-          } 
-          else {
-            txt = "Wrong!";
-          }
-        }
+      function jeopardyQuestionC2() {
+        var txt;
+        var answer = prompt("Question: What animal is Cosmo?", "");
 
-        function jeopardyQuestionC3() {
-          var txt;
-          var answer = prompt("Question: When was the last time we beat Utah in the Holy War?", "");
-  
-          if (answer == "2009") {
-            txt = "Congrats!";
-          } 
-          else {
-            txt = "Wrong! It was 2009 you casuals.";
-          }
+        if (answer == "A Cougar" || answer == "a cougar" || answer == "cougar") {
+          txt = "Congrats!";
+          socre += 100;
+        } 
+        else {
+          txt = "Wrong!";
+          score -= 100;
         }
+        alert(txt);
+        document.getElementById("C2").innerHTML = "";   
+      }
 
-        function jeopardyQuestionC4() {
-          var txt;
-          var answer = prompt("Question: What is the minimum GPA requirement for full tuition in the college of Physical and Mathematical Sciences?", "");
-  
-          if (answer == "3.95" || answer == "3.95 GPA") {
-            txt = "Congrats!";
-          } 
-          else {
-            txt = "Wrong!";
-          }
-        }
+      function jeopardyQuestionC3() {
+        var txt;
+        var answer = prompt("Question: When was the last time we beat Utah in the Holy War?", "");
 
-        function jeopardyQuestionC5() {
-          var txt;
-          var answer = prompt("Question: What building replaced the Widtsoe Building?", "");
-  
-          if (answer == "The Life Science Building" || answer == "the life science building" || answer == "The LSB" || answer == "the lsb") {
-            txt = "Congrats!";
-          } 
-          else {
-            txt = "Wrong!";
-          }
+        if (answer == "2009") {
+          txt = "Congrats!";
+          score += 100;
+        } 
+        else {
+          txt = "Wrong! It was 2009 you casuals.";
+          score -= 100;
         }
+        alert(txt);
+        document.getElementById("C3").innerHTML = "";
+      }
+
+      function jeopardyQuestionC4() {
+        var txt;
+        var answer = prompt("Question: What is the minimum GPA requirement for full tuition in the college of Physical and Mathematical Sciences?", "");
+
+        if (answer == "3.95" || answer == "3.95 GPA") {
+          txt = "Congrats!";
+          score += 100;
+        } 
+        else {
+          txt = "Wrong!";
+          score -= 100;
+        }
+        alert(txt);
+        document.getElementById("C4").innerHTML = "";
+      }
+
+      function jeopardyQuestionC5() {
+        var txt;
+        var answer = prompt("Question: What building replaced the Widtsoe Building?", "");
+
+        if (answer == "The Life Science Building" || answer == "the life science building" || answer == "The LSB" || answer == "the lsb") {
+          txt = "Congrats!";
+          score += 200;
+        } 
+        else {
+          txt = "Wrong!";
+          score -= 200;
+        }
+        alert(txt);
+        document.getElementById("C5").innerHTML = "";
+      }
     </script>
 </html>
