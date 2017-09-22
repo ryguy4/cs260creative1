@@ -9,35 +9,100 @@
                   <th colspan = 4>Jeopardy Game</th>
                 </tr>
                 <tr>
-                  <th>Campus Buildings</th>
-                  <th>The Cosmo</th> 
-                  <th>BYU Sports</th>
-                  <th>Campus Colleges</th>
+                  <th>Campus Buildings</th> <!column 1>
+                  <th>The Cosmo</th>        <!column 2>
+                  <th>BYU Sports</th>       <!column 3>
+                  <th>The University</th>  <!column 4>
                 </tr>
                 <tr>
-                  <td>$100</td>
-                  <td>$100</td> 
-                  <td>$100</td>
-                  <td>$100</td>
+                  <td onclick="jeopardyQuestionC1()">$100</td> <!row 1, cell 1>
+                  <td onclick="jeopardyQuestionC2()">$100</td> <!row 1, cell 2>
+                  <td onclick="jeopardyQuestionC3()">$100</td> <!row 1, cell 3>
+                  <td onclick="jeopardyQuestionC4()">$100</td> <!row 1, cell 4>
                 </tr>
                 <tr>
-                  <td>$200</td>
-                  <td>$200</td> 
-                  <td>$200</td>
-                  <td>$200</td>
+                  <td onclick="jeopardyQuestionC5()">$200</td> <!row 2, cell 1>
+                  <td onclick="jeopardyQuestionC6()">$200</td> <!row 2, cell 2>
+                  <td onclick="jeopardyQuestionC7()">$200</td> <!row 2, cell 3>
+                  <td onclick="jeopardyQuestionC8()">$200</td> <!row 2, cell 4>
                 </tr>
                 <tr>
-                  <td>$300</td>
-                  <td>$300</td> 
-                  <td>$300</td>
-                  <td>$300</td>
+                  <td onclick="jeopardyQuestionC9()">$300</td> <!row 3, cell 1>
+                  <td onclick="jeopardyQuestionC10()">$300</td> <!row 3, cell 2>
+                  <td onclick="jeopardyQuestionC11()">$300</td> <!row 3, cell 3>
+                  <td onclick="jeopardyQuestionC12()">$300</td> <!row 3, cell 4>
                </tr>
                <tr>
-                  <td>$400</td>
-                  <td>$400</td> 
-                  <td>$400</td>
-                  <td>$400</td>
+                  <td onclick="jeopardyQuestionC13()">$400</td> <!row 4, cell 1>
+                  <td onclick="jeopardyQuestionC14()">$400</td> <!row 4, cell 2>
+                  <td onclick="jeopardyQuestionC15()">$400</td> <!row 4, cell 3>
+                  <td onclick="jeopardyQuestionC16()">$400</td> <!row 4, cell 4>
                </tr>
               </table>
     </body>
+    <script>
+      function jeopardyQuestionC1() {
+        var txt;
+        var answer = prompt("Question: What building is the school of business located in?", "");
+
+        if (answer == "Tanner Building" || answer == "tanner building") {
+          txt = "Congrats!";
+        } 
+        else {
+          txt = "Wrong!";
+        }
+      }
+    </script>
+    <script>
+        function jeopardyQuestionC2() {
+          var txt;
+          var answer = prompt("Question: What animal is Cosmo?", "");
+  
+          if (answer == "A Cougar" || answer == "a cougar" || answer == "cougar") {
+            txt = "Congrats!";
+          } 
+          else {
+            txt = "Wrong!";
+          }
+        }
+    </script>
+    <script>
+        function jeopardyQuestionC3() {
+          var txt;
+          var answer = prompt("Question: When was the last time we beat Utah in the Holy War?", "");
+  
+          if (answer == "2009") {
+            txt = "Congrats!";
+          } 
+          else {
+            txt = "Wrong! It was 2009 you casuals.";
+          }
+        }
+    </script>
+    <script>
+        function jeopardyQuestionC4() {
+          var txt;
+          var answer = prompt("Question: What is the minimum GPA requirement for full tuition in the college of Physical and Mathematical Sciences?", "");
+  
+          if (answer == "3.95" || answer == "3.95 GPA") {
+            txt = "Congrats!";
+          } 
+          else {
+            txt = "Wrong!";
+          }
+        }
+    </script>
+    <script>
+        function jeopardyQuestionC5() {
+          var txt;
+          var answer = prompt("Question: What building replaced the Widtsoe Building?", "");
+  
+          if (answer == "The Life Science Building" || answer == "the life science building" || answer == "The LSB" || answer == "the lsb") {
+            txt = "Congrats!";
+          } 
+          else {
+            txt = "Wrong!";
+          }
+        }
+    </script>
 </html>
