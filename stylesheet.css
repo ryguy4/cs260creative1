@@ -10,6 +10,4 @@ table, th, td {
     background-color: #060CE9;
     color: #FFD700;
 }
-td:hovor {
-    background-color: #0409ce;
-}
+td:hover{background-color:#0409CE}
